@@ -51,7 +51,14 @@
     <div id="menu_back">
     	<img class="menu_back" src="img/menu_line.png" />
     </div>
-    <div class="menu">
+    <div class="menueng">
+    <a class="about" href="#">About</a>
+    <a class="gallery" href="#">Gallery</a>
+    <a class="expo" href="#">Exhibition</a>
+    <a class="contact" href="#">Contacts</a>
+    <a class="aboutme" href="#">About Me</a>
+    </div>
+    <div class="menurus">
     <a class="about" href="#">О сайте</a>
     <a class="gallery" href="#">Галерея</a>
     <a class="expo" href="#">Выставки</a>
@@ -61,6 +68,10 @@
     <div id="main" role="main">
 
     </div>
+  <div class="lang">
+  	<a class="rus" href="#">rus</a>
+    <a class="eng" href="#">eng</a>
+  </div>
     <footer>
 
     </footer>
@@ -81,14 +92,24 @@
 
 	<script>
 	$(function() {
-		$( "a", ".menu" ).button();
-		$( "a.about", ".menu" ).click(function() { $('#main').load('html/about.html'); });
-		$( "a.gallery", ".menu" ).click(function() { $('#main').load('html/gallery.html'); });
-		$( "a.expo", ".menu" ).click(function() { $('#main').load('html/expo.html'); });
-		$( "a.contact", ".menu" ).click(function() { $('#main').load('html/contact.html'); });
-		$( "a.aboutme", ".menu" ).click(function() { $('#main').load('html/aboutme.html'); });
+		$( "a", ".menurus" ).button();
+		$( "a", ".menueng" ).button();
+		$( "a.rus", ".lang" ).button({icons: {primary: "ui-icon-flag-rus"}, text: false});
+		$( "a.eng", ".lang" ).button({icons: {primary: "ui-icon-flag-eng"}, text: false});
+		$( "a.about", ".menurus" ).click(function() { $('#main').load('html/aboutrus.html'); });
+		$( "a.gallery", ".menurus" ).click(function() { $('#main').load('html/galleryrus.html'); });
+		$( "a.expo", ".menurus" ).click(function() { $('#main').load('html/exporus.html'); });
+		$( "a.contact", ".menurus" ).click(function() { $('#main').load('html/contactrus.html'); });
+		$( "a.aboutme", ".menurus" ).click(function() { $('#main').load('html/aboutmerus.html'); });
+		$( "a.about", ".menueng" ).click(function() { $('#main').load('html/abouteng.html'); });
+		$( "a.gallery", ".menueng" ).click(function() { $('#main').load('html/galleryeng.html'); });
+		$( "a.expo", ".menueng" ).click(function() { $('#main').load('html/expoeng.html'); });
+		$( "a.contact", ".menueng" ).click(function() { $('#main').load('html/contacteng.html'); });
+		$( "a.aboutme", ".menueng" ).click(function() { $('#main').load('html/aboutmeeng.html'); });
+		$( "a.rus", ".lang" ).click(function() { $("div.menurus").show(); $("div.menueng").hide();});
+		$( "a.eng", ".lang" ).click(function() { $("div.menurus").hide(); $("div.menueng").show();});
 	});
-	$('#main').load('html/main.html');
+	$('#main').load('html/mainrus.html');
 	</script>
 	
   <!-- Change UA-XXXXX-X to be your site's ID -->

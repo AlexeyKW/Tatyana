@@ -43,8 +43,10 @@ header{width:931px; height:306; position:absolute; margin-top: -786px;}
 .paper {filter:alpha(opacity=80); -moz-opacity: 0.8; opacity: 0.8;}
 .menurus{width:931px; position:absolute; margin-top: -556px;}
 .menueng{width:931px; position:absolute; margin-top: -556px;}
-#main{width:931px; position:absolute; margin-top: -500px; text-align:center;}
+#main{width:931px; position:absolute; margin-top: -510px; text-align:center;}
 .lang{width:150px; height:30; position:absolute; margin-top: -730px; margin-left:30;}
+.cnt_txt{margin-top:-60px;}
+
 
 /* 
  * Remove text-shadow in selection highlight: h5bp.com/i

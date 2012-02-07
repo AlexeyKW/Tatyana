@@ -96,6 +96,8 @@
 .ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_ff7519_256x240.png); }
 .ui-button .ui-icon.ui-icon-flag-rus {background-image: url(images/rus.png);}
 .ui-button .ui-icon.ui-icon-flag-eng {background-image: url(images/gb.png);}
+.ui-button .ui-icon.ui-icon-flag-rus_bw {background-image: url(images/rus_bw.png);}
+.ui-button .ui-icon.ui-icon-flag-eng_bw {background-image: url(images/gb_bw.png);}
 
 /* positioning */
 .ui-icon-carat-1-n { background-position: 0 0; }

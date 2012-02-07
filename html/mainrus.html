@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="css/main-slider.css" type="text/css" />
 </head>
 <body>
+		<script src="js/fonts/a_AntiqueGr_400.font.js" type="text/javascript"></script>
+		<script src="js/fonts/a_AvanteNrMedium_italic_500.font.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			Cufon.replace('.welcome', {fontFamily:'a_AntiqueGr'});// Requires a selector engine for IE 6-7, see above
+			Cufon.replace('.main_text', {fontFamily:'a_AvanteNrMedium'});
+		</script>
+<div id='welcome_text_cont'>
+<p class="welcome">Добро пожаловать</p>
+</div>
 <div id='containerslide'>
-<div id='coin-slider'>
+	<div id='coin-slider'>
     <a href="#" target="_blank">
         <img src='img/main_slide/img001.jpg' >
         <span>
@@ -29,12 +38,15 @@
     </a>
 </div>
 </div>
+<div id='main_text_cont'>
+	<p class='main_text'>На протяжении многих веков создание карт было возведено в особый вид изобразительного искусства. Они считались предметом роскоши, достойным красоваться во дворцах аристократов. Карта всегда обеспечивала не только ориентирование в пространстве, познание мира, но и была способна приковать взор, побудить творческие фантазии, украсить и оживить любой интерьер...</p>
+</div>
 <script type="text/javascript">
     $(document).ready(function() {
-        $('#coin-slider').coinslider({width: 650, height: 450, spw: 5, sph: 4, delay: 6000, opacity: 0.7, titleSpeed: 500, navigation: false, Links : false, hoverPause: false});
+        $('#coin-slider').coinslider({width: 400, height: 300, spw: 5, sph: 4, delay: 6000, opacity: 0.7, titleSpeed: 500, navigation: false, Links : false, hoverPause: false});
       });
 </script>
-
+<script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>
  

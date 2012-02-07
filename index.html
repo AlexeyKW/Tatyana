@@ -52,21 +52,26 @@
     	<img class="menu_back" src="img/menu_line.png" />
     </div>
     <div class="menueng">
-    <a class="about" href="#">About</a>
+    <a class="about" href="#">Main</a>
     <a class="gallery" href="#">Gallery</a>
     <a class="expo" href="#">Exhibition</a>
+    <a class="services" href="#">Services</a>
     <a class="contact" href="#">Contacts</a>
     <a class="aboutme" href="#">About Me</a>
     </div>
     <div class="menurus">
-    <a class="about" href="#">О сайте</a>
+    <a class="about" href="#">Главная</a>
     <a class="gallery" href="#">Галерея</a>
     <a class="expo" href="#">Выставки</a>
+    <a class="services" href="#">Услуги</a>
     <a class="contact" href="#">Контакты</a>
     <a class="aboutme" href="#">О себе</a>
     </div>
     <div id="main" role="main">
 
+    </div>
+    <div class="cnt_txt">
+    	<p class="footer_txt">Тел. 8-923-785-93-09, e-mail: SIZIKOVA_MAP@MAIL.RU</p>
     </div>
   <div class="lang">
   	<a class="rus" href="#">rus</a>
@@ -83,6 +88,8 @@
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="js/jquery-1.7.1.min.js"></script>
   <script src="js/jquery-ui-1.8.17.custom.min.js"></script>
+  <script src="js/cufon-yui.js" type="text/javascript"></script>
+  <script src="js/fonts/Bankir-Retro_500.font.js" type="text/javascript"></script>
 
 
   <!-- scripts concatenated and minified via ant build script-->
@@ -94,21 +101,28 @@
 	$(function() {
 		$( "a", ".menurus" ).button();
 		$( "a", ".menueng" ).button();
-		$( "a.rus", ".lang" ).button({icons: {primary: "ui-icon-flag-rus"}, text: false});
+		$( "a.rus", ".lang" ).button({icons: {primary: "ui-icon-flag-rus_bw"}, text: false});
 		$( "a.eng", ".lang" ).button({icons: {primary: "ui-icon-flag-eng"}, text: false});
-		$( "a.about", ".menurus" ).click(function() { $('#main').load('html/aboutrus.html'); });
+		$( "a.about", ".menurus" ).click(function() { $('#main').load('html/mainrus.html'); });
 		$( "a.gallery", ".menurus" ).click(function() { $('#main').load('html/galleryrus.html'); });
 		$( "a.expo", ".menurus" ).click(function() { $('#main').load('html/exporus.html'); });
+		$( "a.services", ".menurus" ).click(function() { $('#main').load('html/servrus.html'); });
 		$( "a.contact", ".menurus" ).click(function() { $('#main').load('html/contactrus.html'); });
 		$( "a.aboutme", ".menurus" ).click(function() { $('#main').load('html/aboutmerus.html'); });
-		$( "a.about", ".menueng" ).click(function() { $('#main').load('html/abouteng.html'); });
+		$( "a.about", ".menueng" ).click(function() { $('#main').load('html/mainrus.html'); });
 		$( "a.gallery", ".menueng" ).click(function() { $('#main').load('html/galleryeng.html'); });
 		$( "a.expo", ".menueng" ).click(function() { $('#main').load('html/expoeng.html'); });
+		$( "a.services", ".menueng" ).click(function() { $('#main').load('html/serveng.html'); });
 		$( "a.contact", ".menueng" ).click(function() { $('#main').load('html/contacteng.html'); });
 		$( "a.aboutme", ".menueng" ).click(function() { $('#main').load('html/aboutmeeng.html'); });
-		$( "a.rus", ".lang" ).click(function() { $("div.menurus").show(); $("div.menueng").hide();});
-		$( "a.eng", ".lang" ).click(function() { $("div.menurus").hide(); $("div.menueng").show();});
+		$( "a.rus", ".lang" ).click(function() { $("div.menurus").show(); $("div.menueng").hide(); 
+			$( "a.rus", ".lang" ).button("option", {icons: {primary: "ui-icon-flag-rus_bw"}});
+			$( "a.eng", ".lang" ).button("option", {icons: {primary: "ui-icon-flag-eng"}});});
+		$( "a.eng", ".lang" ).click(function() { $("div.menurus").hide(); $("div.menueng").show(); 
+			$( "a.eng", ".lang" ).button("option", {icons: {primary: "ui-icon-flag-eng_bw"}});
+			$( "a.rus", ".lang" ).button("option", {icons: {primary: "ui-icon-flag-rus"}});});
 	});
+	Cufon.replace('.footer_txt', {fontFamily:'Bankir-Retro'});
 	$('#main').load('html/mainrus.html');
 	</script>
 	

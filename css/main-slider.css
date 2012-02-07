@@ -1,1 +1,5 @@
-#containerslide{width:650; height:500; margin-left: 140px;}
+#containerslide{margin-left: 260px; margin-top: -20px;}
+#main_text_cont{width:850px; text-align: center; margin-left: 40px;}
+#welcome_text_cont{width:930px; text-align: center; margin-top:-45px;}
+.welcome {font-size: 25pt;}
+.main_text{font-size: 13pt;}

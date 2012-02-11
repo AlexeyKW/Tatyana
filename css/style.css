@@ -46,6 +46,7 @@ header{width:931px; height:306; position:absolute; margin-top: -786px;}
 #main{width:931px; position:absolute; margin-top: -510px; text-align:center;}
 .lang{width:150px; height:30; position:absolute; margin-top: -715px; margin-left:30;}
 .cnt_txt{margin-top:-60px;}
+.footer_txt{font-size:14px; color: RGB(76, 60, 27);}
 
 
 /* 

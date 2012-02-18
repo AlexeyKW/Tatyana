@@ -2,10 +2,28 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+<link type="text/css" href="css/left.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery.pikachoose.js"></script>
+		<script language="javascript">
+			$(document).ready(function (){
+					$("#pikame").PikaChoose({carousel:true, carouselVertical:true, autoPlay:false, transition:[5]});
+				});
+		</script>
+	
 </head>
 <body>
 
-<h2>Галерея</h2>
+<p>Галерея 1</p>
+
+<div class="pikachoose">
+	<ul id="pikame" class="jcarousel-skin-pika">
+		<li><a href="#"><img src="img/gallery/1.jpg"/></a><span>Название картины 1</span></li>
+		<li><a href="#"><img src="img/gallery/2.jpg"/></a><span>Название картины 2</span></li>
+		<li><a href="#"><img src="img/gallery/3.jpg"/></a><span>Название картины 3</span></li>
+		<li><a href="#"><img src="img/gallery/4.jpg"/></a><span>Название картины 4</span></li>
+		<li><a href="#"><img src="img/gallery/5.jpg"/></a><span>Название картины 5</span></li>
+	</ul>
+</div>
 
 </body>
 </html>

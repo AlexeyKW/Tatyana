@@ -41,8 +41,8 @@
 	.pika-textnav a.next {float: right; width: auto; display: block;}
 
 /*for the tool tips*/
-.pika-tooltip{font-size:13px;position:absolute;color:white; padding:3px; background-color:rgba(0,0,0,0.7);border:3px solid black;}
-.pika-counter{position: absolute;bottom: 45px;left:15px;color:black;background:rgba(0,0,0,0.7);font-size:11px;padding:3px;-moz-border-radius: 5px;border-radius:5px;}
+.pika-tooltip{font-size:13px;position:absolute;color:white; padding:3px; background-color:rgba(0,0,0,0.2);border:3px solid black;}
+.pika-counter{position: absolute;bottom: 45px;left:15px;color:black;background:rgba(255,255,255,0.2);font-size:11px;padding:3px;-moz-border-radius: 5px;border-radius:5px;}
 
 /* If using user thumbnails there's a pause well the new large image loads. This is the loader for that */		
 .pika-loader{ background:url(loading.gif) 3px 3px no-repeat #000; background-color:rgba(0,0,0,0.9); color:white; width:60px; font-size:11px; padding:5px 3px; 

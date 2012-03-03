@@ -3,27 +3,32 @@
 <head>
 	<meta charset="utf-8">
 <link type="text/css" href="css/left.css" rel="stylesheet" />
-		<script type="text/javascript" src="js/jquery.pikachoose.js"></script>
-		<script language="javascript">
-			$(document).ready(function (){
-					$("#pikame").PikaChoose({carousel:true, carouselVertical:true, autoPlay:false, transition:[5]});
-				});
-		</script>
-	
 </head>
 <body>
+<table width="855" height="460" border="0" align="center">
+  <tr>
+    <td><p><a class="gal_wrld" href="#"><img src="img/gallery/wrld.png" width="209" height="180"></a></p>
+    <h3>Карты мира</h3></td>
+    <td><p><a class="gal_cont" href="#"><img src="img/gallery/cont.png" width="210" height="180"></a></p>
+    <h3>Карты континентов и империй</h3></td>
+    <td><a class="gal_astro" href="#"><p><img src="img/gallery/astro.png" width="215" height="180"></a></p>
+      <h3>Астрономические карты</h3>
+    <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
 
-<p>Галерея 1</p>
-
-<div class="pikachoose">
-	<ul id="pikame" class="jcarousel-skin-pika">
-		<li><a href="#"><img src="img/gallery/1.jpg"/></a><span>Название картины 1</span></li>
-		<li><a href="#"><img src="img/gallery/2.jpg"/></a><span>Название картины 2</span></li>
-		<li><a href="#"><img src="img/gallery/3.jpg"/></a><span>Название картины 3</span></li>
-		<li><a href="#"><img src="img/gallery/4.jpg"/></a><span>Название картины 4</span></li>
-		<li><a href="#"><img src="img/gallery/5.jpg"/></a><span>Название картины 5</span></li>
-	</ul>
-</div>
+<script>
+	$(function() {
+		$( "a.gal_wrld").click(function() { $('#main').load('html/galleryrus_wrld.html'); });
+		$( "a.gal_cont").click(function() { $('#main').load('html/galleryrus_cont.html'); });
+		$( "a.gal_astro").click(function() { $('#main').load('html/galleryrus_astro.html'); });
+	});
+	</script>
 
 </body>
 </html>

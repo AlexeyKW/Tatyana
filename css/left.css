@@ -1,7 +1,8 @@
 ﻿@import url('base.css');
 
-.s_header {font-size:26px; color: RGB(76, 60, 27); margin:16px;}
+.s_header {font-size:26px; color: RGB(76, 60, 27); margin:8px;}
 h3 {color: RGB(76, 60, 27);}
+h2 {color: RGB(76, 60, 27);}
 
 /* Make the thubms tile on the left */
 .pika-thumbs li{width: 90px; height:55px; margin: 5px 5px;}
@@ -25,7 +26,7 @@ h3 {color: RGB(76, 60, 27);}
 .pika-stage, .pika-textnav {width: 500px;}
 .pika-stage {border: 0px solid #e5e5e5; padding: 10px 10px 40px 10px; text-align:center; height:300px;}
 .pika-stage img{height:100%;}
-.pika-stage .caption {position: relative; font-size: 14px; color: #000000; font-weight:bold; padding: 10px; text-align: center; bottom: 0px;}
+.pika-stage .caption {position: relative; font-size: 14px; color: #4c3c1b; font-weight:bold; padding: 10px; text-align: center; bottom: 0px;}
 	.pika-stage .caption p {padding: 0; margin: 0; line-height: 14px;}
 
 /* Ths play, pause, prev and next buttons */

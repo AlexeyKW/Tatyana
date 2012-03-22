@@ -12,6 +12,7 @@
 		<script type="text/javascript">
 			Cufon.replace('.welcome', {fontFamily:'a_AntiqueGr'});// Requires a selector engine for IE 6-7, see above
 			Cufon.replace('.main_text', {fontFamily:'a_AvanteNrMedium'});
+			$("div.containerslide").hide();
 		</script>
 <div id='welcome_text_cont'>
 <p class="welcome">Добро пожаловать</p>
@@ -46,7 +47,10 @@
         $('#coin-slider').coinslider({width: 400, height: 300, spw: 5, sph: 4, delay: 6000, opacity: 0.7, titleSpeed: 500, navigation: false, Links : false, hoverPause: false});
       });
 </script>
-<script type="text/javascript"> Cufon.now(); </script>
+<script type="text/javascript"> 
+	Cufon.now(); 
+	$("div.containerslide").show();
+</script>
 </body>
 </html>
  

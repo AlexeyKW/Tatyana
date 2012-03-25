@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+<link type="text/css" href="css/left.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery.pikachoose.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>				
+		<script language="javascript">
+			$(document).ready(function (){
+				var a = function(self){self.anchor.fancybox();};
+					$("#pikame").PikaChoose({carousel:true, carouselVertical:true, autoPlay:false, transition:[5], buildFinished:a});
+				});
+		</script>
+	
+</head>
+<body>
+
+<h2>Карты в наличии</h2>
+
+<div class="pikachoose">
+	<ul id="pikame" class="jcarousel-skin-pika">
+		<li><a href="img/gallery/ready/1_full.jpg"><img src="img/gallery/ready/1.jpg"/></a><span>Копия старинной карты мира, чернила/акварель, формат 70*56 см, 2011 г.</span></li>
+		<li><a href="img/gallery/ready/2_full.jpg"><img src="img/gallery/ready/2.jpg"/></a><span>Карта мира, холст/масло, формат 60*80 см, 2011 г.</span></li>
+		<li><a href="img/gallery/ready/3_full.jpg"><img src="img/gallery/ready/3.jpg"/></a><span>Копия старинной карты  Европы, чернила, формат 95*65 см, 2012 г.</span></li>        
+	</ul>
+</div>
+
+</body>
+</html>
+ 

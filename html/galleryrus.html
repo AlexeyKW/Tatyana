@@ -23,14 +23,13 @@
       <h3>Астрономические карты</h3>
   </tr>
   <tr align="center">
-  	<table width="650px" border="0" align="center">
-  		<tr>
-				<td colspan="2" style="width:100px"><p><a class="gal_city" href="#"><img src="img/gallery/city.png" height="115"></a></p>
+  	<tr>
+				<td><p><a class="gal_city" href="#"><img src="img/gallery/city.png" height="115"></a></p>
     		<h3>Планы городов</h3></td>
     		<td><p><a class="gal_draw" href="#"><img src="img/gallery/draw.png" height="115"></a></p>
     		<h3>Чертежи и гравюры</h3></td>
-    	</tr>
-  </table>
+    		<td><p><a class="gal_ready" href="#"><img src="img/gallery/ready.png" height="115"></a></p>
+    		<h3>Карты в наличии</h3></td>
   </tr>
 </table>
 
@@ -41,6 +40,7 @@
 		$( "a.gal_astro").click(function() { $('#main').load('html/galleryrus_astro.html'); });
 		$( "a.gal_city").click(function() { $('#main').load('html/galleryrus_city.html'); });
 		$( "a.gal_draw").click(function() { $('#main').load('html/galleryrus_draw.html'); });
+		$( "a.gal_ready").click(function() { $('#main').load('html/galleryrus_ready.html'); });
 	});
 	</script>
 

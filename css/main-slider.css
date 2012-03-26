@@ -1,6 +1,8 @@
 #containerslide{margin-left: 0px; margin-top: -20px;}
 #main_text_cont{width:850px; text-align: center; margin-left: 40px;}
 #welcome_text_cont{width:930px; text-align: center; margin-top:-45px;}
+#thanks{width:855px; margin-top:-15px;}
 .welcome {font-size: 25pt;}
 .main_text{font-size: 13pt;}
 .s_text {font-size:19px; text-align:center; color: RGB(76, 60, 27);}
+.t_text {font-size:12px; text-align:right; color: RGB(76, 60, 27); margin: -10px; font-weight: 600;}

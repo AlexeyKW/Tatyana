@@ -7,40 +7,70 @@
     <link rel="stylesheet" href="css/main-slider.css" type="text/css" />
 </head>
 <body>
+		<script src="js/fonts/a_AntiqueGr_400.font.js" type="text/javascript"></script>
+		<script src="js/fonts/a_AvanteNrMedium_italic_500.font.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			Cufon.replace('.welcome', {fontFamily:'a_AntiqueGr'});// Requires a selector engine for IE 6-7, see above
+			Cufon.replace('.main_text', {fontFamily:'a_AvanteNrMedium'});
+			$("div.containerslide").hide();
+		</script>
+<div id='welcome_text_cont'>
+<p class="welcome">Welcome</p>
+</div>
 <div id='containerslide'>
+
+
+<table width="855" height="150" border="0" align="center">
+  <tr>
+<td background="img/hands.png" style="background-repeat:no-repeat; background-position: center center;">
+	<p class="s_text">&nbsp</p>
+	<p class="s_text">&nbsp</p>
+	<p class="s_text">Все карты являются 100% ручной работой и</p>
+	<p class="s_text">выполняются  тушью,  акрилом или акварелью</p>
+	<p class="s_text">на холсте, картоне либо бумаге</p>
+</td>
+<td>
 <div id='coin-slider'>
     <a href="#" target="_blank">
-        <img src='img/main_slide/img01.jpg' >
+        <img src='img/main_slide/img001.jpg' >
         <span>
-            Описание изображения 1
+            Копия старинной карты мира, чернила/акварель, формат 70*56 см, 2011 г.
         </span>
     </a>
 		<a href="#" target="_blank">
-        <img src='img/main_slide/img02.jpg' >
+        <img src='img/main_slide/img002.jpg' >
         <span>
-            Описание изображения 2
+            Карта мира, холст/масло, формат 60*80 см, 2011 г.
         </span>
     </a>
     <a href="#" target="_blank">
-        <img src='img/main_slide/img03.jpg' >
+        <img src='img/main_slide/img003.jpg' >
         <span>
-            Описание изображения 3
+            Копия старинной карты  Европы, чернила, формат 95*65 см, 2012 г.
         </span>
     </a>
-    <a href="#" target="_blank">
-        <img src='img/main_slide/img04.jpg' >
-        <span>
-            Описание изображения 4
-        </span>
-    </a>
+</div>	
+</td>
+  </tr>
+</table>
+
 </div>
+<div id='main_text_cont'>
+	<p class='main_text'>На протяжении многих веков создание карт было возведено в особый вид изобразительного искусства. Они считались предметом роскоши, достойным красоваться во дворцах аристократов. Карта всегда обеспечивала не только ориентирование в пространстве, познание мира, но и была способна приковать взор, побудить творческие фантазии, украсить и оживить любой интерьер...</p>
+</div>
+<div id='thanks'>
+	<p class='t_text'>Благодарность за помощь в<p>
+	<p class='t_text'>создании сайта Колесникову А. А.<p>
 </div>
 <script type="text/javascript">
     $(document).ready(function() {
-        $('#coin-slider').coinslider({width: 450, spw: 5, sph: 3, delay: 6000, opacity: 0.7, titleSpeed: 500, navigation: false, Links : false, hoverPause: false});
+        $('#coin-slider').coinslider({width: 400, height: 300, spw: 4, sph: 3, delay: 8000, opacity: 0.7, titleSpeed: 600, effect: "straight", navigation: false, Links : false, hoverPause: false});
       });
 </script>
-
+<script type="text/javascript"> 
+	Cufon.now(); 
+	$("div.containerslide").show();
+</script>
 </body>
 </html>
  

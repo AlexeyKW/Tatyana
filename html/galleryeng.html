@@ -2,10 +2,49 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+<link type="text/css" href="css/left.css" rel="stylesheet" />
+	<script src="js/fonts/Bankir-Retro_500.font.js" type="text/javascript"></script>
 </head>
 <body>
+	
+<script type="text/javascript">
+			Cufon.replace('.s_header', {fontFamily:'Bankir-Retro'});
+</script>
 
-<h2>Gallery</h2>
+<p class="s_header">GALLERY</p>
+<h3> примеры выполняемых работ</h3>
+<table width="855" height="160" border="0" align="center">
+  <tr>
+    <td><p><a class="gal_wrld" href="#"><img src="img/gallery/wrld.png" height="115"></a></p>
+    <h3>Карты мира</h3></td>
+    <td><p><a class="gal_cont" href="#"><img src="img/gallery/cont.png" height="115"></a></p>
+    <h3>Карты континентов и империй</h3></td>
+    <td><a class="gal_astro" href="#"><p><img src="img/gallery/astro.png" height="115"></a></p>
+      <h3>Астрономические карты</h3>
+  </tr>
+  <tr align="center">
+  	<tr>
+				<td><p><a class="gal_city" href="#"><img src="img/gallery/city.png" height="115"></a></p>
+    		<h3>Планы городов</h3></td>
+    		<td><p><a class="gal_draw" href="#"><img src="img/gallery/draw.png" height="115"></a></p>
+    		<h3>Чертежи и гравюры</h3></td>
+    		<td><p><a class="gal_ready" href="#"><img src="img/gallery/ready.png" height="115"></a></p>
+    		<h3>Карты в наличии</h3></td>
+  </tr>
+</table>
+
+<script>
+	$(function() {
+		$( "a.gal_wrld").click(function() { $('#main').load('html/galleryrus_wrld.html'); });
+		$( "a.gal_cont").click(function() { $('#main').load('html/galleryrus_cont.html'); });
+		$( "a.gal_astro").click(function() { $('#main').load('html/galleryrus_astro.html'); });
+		$( "a.gal_city").click(function() { $('#main').load('html/galleryrus_city.html'); });
+		$( "a.gal_draw").click(function() { $('#main').load('html/galleryrus_draw.html'); });
+		$( "a.gal_ready").click(function() { $('#main').load('html/galleryrus_ready.html'); });
+	});
+	</script>
+
+<script type="text/javascript"> Cufon.now(); </script>
 
 </body>
 </html>
